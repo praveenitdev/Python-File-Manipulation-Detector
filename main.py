@@ -16,6 +16,7 @@ def getFolderIntegrity(folder):
         file_path = folder+"/"+file
         data[folder][file]= generateHash(file_path)
     return data
+    
 if __name__ == '__main__':
     parser = optparse.OptionParser()
     parser.add_option('--scan', help='provide the folder name to save integrity', type='str', dest='scan_folder_name')
